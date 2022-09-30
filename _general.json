@@ -1,0 +1,48 @@
+{
+  "companyAbbreviation": "XXX",
+  "region": "swedencentral",
+  "tenantId": "",
+  "AADDSDomainName": "aadds.mydomain.com",
+  "Notifications": [
+    "my.email@mydomain.com"
+  ],
+  "virtualNetwork": {
+    "vNetName": "infra",
+    "vNetAddressPrefixes": [
+      "172.21.16.0/20"
+    ],
+    "subnets": [
+      {
+        "sNetName": "GatewaySubnet",
+        "subnet": "172.21.16.0/27",
+        "nsg": "",
+        "routeTable": "",
+        "delegations": [],
+        "serviceEndpoints": []
+      },
+      {
+        "sNetName": "AzureBastionSubnet",
+        "subnet": "172.21.16.32/27",
+        "nsg": "",
+        "routeTable": "",
+        "delegations": [],
+        "serviceEndpoints": []
+      },
+      {
+        "sNetName": "AADDS",
+        "subnet": "172.21.17.0/26",
+        "routeTable": "",
+        "delegations": [],
+        "serviceEndpoints": []
+      },
+      {
+        "sNetName": "Backend",
+        "subnet": "172.21.18.0/26",
+        "nsg": "",
+        "routeTable": "",
+        "delegations": [],
+        "serviceEndpoints": []
+      }
+    ]
+  }
+}
