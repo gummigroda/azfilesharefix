@@ -1,7 +1,7 @@
 {
   "companyAbbreviation": "XXX",
   "region": "swedencentral",
-  "tenantId": "",
+  "tenantId": "CHANGE-ME",
   "AADDSDomainName": "aadds.mydomain.com",
   "Notifications": [
     "my.email@mydomain.com"

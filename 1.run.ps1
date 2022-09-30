@@ -5,7 +5,7 @@ $Settings = Get-Content -Path './_general.json' | ConvertFrom-Json
 
 # Login
 $loginProps = @{
-    Tenant       = 'tenant-id'
+    Tenant       = $Settings.tenantId
     AccountId    = "my.account@mydomain.com"
     Subscription = 'subscription-id'
 }
